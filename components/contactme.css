@@ -1,0 +1,113 @@
+.contactme {
+  height: 130vh;
+  width: 100%;
+  background-color: rgba(19, 23, 28, 1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contactme__title {
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 42px;
+  color: white;
+}
+
+.contactme__form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 313px;
+}
+
+.name-email-cont {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.form__group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form__label {
+  color: white;
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.form__input {
+  background-color: rgba(57, 62, 70, 0.5);
+  width: 313px;
+  height: 59px;
+  border: none;
+  border-radius: 16px;
+  padding-left: 21px;
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 18px;
+  color: white;
+}
+
+.form__input::placeholder {
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 18px;
+}
+
+#mensaje {
+  height: 280px;
+  resize: none;
+  padding: 10px;
+}
+
+.form__button {
+  background-color: rgba(0, 173, 181, 1);
+  border: none;
+  border-radius: 24px;
+  width: 313px;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.form__button-img {
+  align-self: flex-end;
+  margin-bottom: 7px;
+}
+
+@media (min-width: 1260px) {
+  .contactme {
+    height: 100vh;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 220px;
+  }
+
+  .contactme__title {
+    position: relative;
+    top: -210px;
+    font-size: 64px;
+  }
+
+  .contactme__form {
+    width: 656px;
+  }
+  .name-email-cont {
+    flex-direction: row;
+  }
+  #mensaje {
+    width: 100%;
+  }
+}

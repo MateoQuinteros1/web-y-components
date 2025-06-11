@@ -1,0 +1,157 @@
+* {
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.welcome {
+  background-color: rgba(19, 23, 28, 1);
+  width: 100%;
+  height: 667px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.welcome__title {
+  color: white;
+  font-weight: 700;
+  font-size: 60px;
+  text-align: center;
+  width: 196px;
+}
+
+#title__span {
+  color: rgba(0, 173, 181, 1);
+}
+
+.images__container {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+
+.welcome__image-shadow {
+  display: none;
+}
+
+.aboutme__section {
+  background-color: rgba(25, 33, 48, 1);
+  height: 120vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 44px;
+  justify-content: space-around;
+}
+
+.aboutme__text-cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.aboutme__title {
+  color: white;
+  font-weight: 700;
+  font-size: 42px;
+  align-self: flex-start;
+}
+
+.aboutme__text {
+  font-weight: 400;
+  font-size: 18px;
+  color: white;
+  margin-top: 0;
+}
+
+.aboutme__img {
+  height: 241px;
+  width: 295px;
+}
+
+.services {
+  background-color: rgba(19, 23, 28, 1);
+  background-image: url(../images/services-background.svg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.services__title {
+  color: white;
+  font-weight: 700;
+  font-size: 42px;
+  margin: 90px 0;
+}
+
+.services__title-special {
+  color: rgba(0, 173, 181, 1);
+}
+
+.services-container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin-bottom: 120px;
+}
+
+@media (min-width: 1220px) {
+  .services-container {
+    flex-direction: row;
+  }
+  .services {
+    height: 100vh;
+  }
+}
+
+@media (min-height: 900px) {
+  .welcome {
+    height: calc(100vh - 117px);
+  }
+}
+
+@media (min-width: 968px) {
+  .welcome {
+    flex-direction: row;
+    justify-content: center;
+    gap: 350px;
+  }
+  .welcome__title {
+    font-size: 96px;
+    margin-top: 0;
+  }
+
+  .welcome__image {
+    width: 353px;
+    height: 340px;
+  }
+
+  .welcome__image-shadow {
+    display: inherit;
+  }
+
+  .aboutme__section {
+    flex-direction: row;
+  }
+  .aboutme__title {
+    font-size: 64px;
+    margin-bottom: 40px;
+  }
+  .aboutme__text {
+    max-width: 389px;
+    font-size: 19px;
+  }
+  .aboutme__img {
+    height: 360px;
+    width: 500px;
+  }
+
+  .services__title {
+    font-size: 64px;
+  }
+}
